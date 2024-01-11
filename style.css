@@ -1,9 +1,18 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+* {
+    font-family: 'Roboto';
+}
+
+body {
+    margin: 0px;
+    padding: 0px;
+}
 
 .container {
 
     display: grid;
     grid-template-columns: 1fr 4fr;
-    grid-template-rows: 1fr 1fr 1fr 1fr;
     height: 100vh;
 
 }
@@ -11,9 +20,6 @@
 .header-container {
 
     grid-column: 2 / 3;
-
-    /* display: grid; */
-    grid-template-rows: 100px 100px;
     padding: 20px;
 
 }
@@ -55,4 +61,38 @@
     grid-template-columns: 1fr 1fr 1fr;
     list-style: none;
     align-items: center;
+}
+
+.sidebar {
+    grid-row: 1 / 4;
+    display: grid;
+    grid-template-rows: 100px 1fr 2fr;
+    color: white;
+    background-color: rgb(25, 146, 212);
+
+}
+
+.sidebar-logo {
+    font-size: 25px;
+    display: flex;
+    gap: 10px;
+    padding: 10px;
+}
+
+.dashboard-logo {
+    fill: white;
+    width: 50px;
+}
+
+.card {
+    display: flex;
+    gap: 20px;
+    list-style: none;
+    font-size: 22px;
+    margin: 10px 0px;
+}
+
+.card svg {
+    width: 25px;
+    fill: white;
 }
